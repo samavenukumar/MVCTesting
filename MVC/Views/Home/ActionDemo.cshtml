@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Redirect Result Demo</h2>
+<br />
+<div>
+    \**** Partial ****\
+    @Html.ActionLink("Redirect To Index", "RedirectToIndex", "Home");
+</div>
+
+<h2>Partial View Demo</h2>
+<br />
+<div>
+    //*****Partial*****//
+    @Html.Partial("PartialDemo")
+</div>
+<br />
+<div>
+    //**RenderPartial**//
+    @{Html.RenderPartial("PartialDemo");
+    }
+</div>
+<br />
+<div>
+    //**RenderAction**//
+    @{ Html.RenderAction("PartialDemo");}
+</div>
+<p>This is an empy web page</p>
+
